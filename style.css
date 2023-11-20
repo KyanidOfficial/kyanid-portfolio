@@ -444,6 +444,12 @@ footer .column .socials a:hover {
     left: 42%;
 }
 
+#particles-js {
+    height: 100%;
+    background: transparent;
+    z-index: 1000;
+}
+
 ::-webkit-scrollbar-thumb {
     background: var(--color-fav);
     border-radius: 5px;
@@ -499,10 +505,27 @@ footer .column .socials a:hover {
 
     .widget {
         top: 280%;
-        left: 3%;
+        left: 15%;
     }
 
     footer {
         grid-template-columns: 1fr 150px;
     }
+}
+
+
+
+/* ---- reset ---- */  
+canvas{ 
+    display: block; 
+    vertical-align: bottom; 
+} 
+/* ---- particles.js container ---- */ 
+#particles-js{ 
+    position:absolute; 
+    width: 100%; 
+    height: 100vh; 
+    top: 100%;
+    z-index: -200;
+    background-color: transparent; 
 }
