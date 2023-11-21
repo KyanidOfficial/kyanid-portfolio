@@ -202,7 +202,7 @@ section .header {
 
 .features .card {
     background-color: #27272759;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(2px);
     padding: 1rem;
     border: 2px solid transparent;
     border-radius: 15px;
