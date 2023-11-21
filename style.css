@@ -48,7 +48,7 @@ body {
 #blackhole {
     position: absolute;
     z-index: -500;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     left: 0;
     top: -35%;
 }
