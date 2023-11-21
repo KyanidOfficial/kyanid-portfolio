@@ -266,7 +266,7 @@ section .header {
 
 .projects .card {
     background-color: #27272759;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
     padding: 3rem 1.5rem;
     border: 2px solid transparent;
     border-radius: 15px;
