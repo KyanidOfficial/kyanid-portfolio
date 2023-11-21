@@ -431,6 +431,7 @@ footer .column .socials a:hover {
 .copyright {
     max-width: 1200px;
     margin: auto;
+    background-color: red;
     padding: 1rem;
     color: #fff;
     font-size: 0.8rem;
@@ -446,8 +447,8 @@ footer .column .socials a:hover {
 
 /* ---- Particles ---- */  
 canvas{ 
-    display: block; 
-    vertical-align: bottom; 
+    display: block;
+    vertical-align: bottom;
 } 
 /* ---- particles.js container ---- */ 
 #particles-js{ 
@@ -455,7 +456,7 @@ canvas{
     width: 100%; 
     height: 100vh; 
     top: 135%;
-    z-index: -2000;
+    z-index: -200;
     background-color: transparent; 
 }
 
