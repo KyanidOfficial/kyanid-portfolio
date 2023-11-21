@@ -429,6 +429,7 @@ footer .column .socials a:hover {
 }
 
 .copyright {
+    background-color: #030014;
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
