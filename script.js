@@ -1,3 +1,5 @@
+
+/*Widget*/
 var CloseButton = document.getElementById("closebutton");
 
 CloseButton.addEventListener("click", function() {
@@ -16,6 +18,9 @@ openButton.addEventListener("click", function() {
     body.style.overflow = "hidden";
 });
 
+
+
+/*Partciles*/
 particlesJS("particles-js", 
 {
     "particles":
