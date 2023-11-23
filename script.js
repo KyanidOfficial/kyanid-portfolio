@@ -18,8 +18,6 @@ openButton.addEventListener("click", function() {
     body.style.overflow = "hidden";
 });
 
-
-
 /*Partciles*/
 particlesJS("particles-js", 
 {
