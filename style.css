@@ -474,28 +474,28 @@ canvas {
 
 
 .onloadCard {
-    animation: onLoadCards 3.8s linear 1;
+    animation: onLoadCards 1s linear 1;
 }
 .onLoadAboutMe {
-    animation: onLoadAboutMe 3s linear 1;
+    animation: onLoadAboutMe .5s linear 1;
 }
 .onLoadNav {
-    animation: onLoadNav 3.5s linear 1;
+    animation: onLoadNav .8s linear 1;
 }
 .onLoadText {
-    animation: onLoadText 3.5s linear 1;
+    animation: onLoadText .8s linear 1;
 }
 .onLoadHole {
-    animation: onLoadHole 3.5s linear 1;
+    animation: onLoadHole .8s linear 1;
 }
 .onLoadFooter {
-    animation: onLoadFooter 3.5s linear 1;
+    animation: onLoadFooter .8s linear 1;
 }
 .onLoadStars {
-    animation: onLoadStars 4s linear 1;
+    animation: onLoadStars 2s linear 1;
 }
 .onLoadCopyright {
-    animation: onLoadCopyright 3s linear 1;
+    animation: onLoadCopyright .3s linear 1;
 }
 
 @keyframes onLoadStars {
