@@ -1,3 +1,10 @@
+<!--
+  GITHUB PUSH:
+    git commint -m "<message>"
+    git push -f
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +13,7 @@
   <meta name="viewport" content="width=, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+  <link rel="shortcut icon" href="items/minilogo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/679a729a6b.js" crossorigin="anonymous"></script>
   <title>Kyanid's Portfolio</title>
 </head>
@@ -41,7 +49,7 @@
 
   <section id="knowl" class="container">
     <h2 class="header onLoadText">MY KNOWLEDGE</h2>
-    <div class="features onLoadFooter">
+    <div class="features onloadCard">
       <span class="know-blur"></span>
       <span class="know-blur"></span>
       <div class="card">
@@ -78,7 +86,7 @@
       </div>
     </div>
   </section>
-  <section id="blur" class="onLoadFooter">
+  <section id="blur">
     <span class="blur"></span>
     <span class="blur"></span>
   </section>
@@ -93,8 +101,7 @@
         </p>
       </div>
     </div>
-    <div class="projects">
-      <div class="onLoadFooter">
+    <div class="projects onloadCard">
       <div class="card">
         <h4>Right Land Paradise</h4>
         <p>A simple web for minecraft project named <strong style="color: var(--color-fav);">Right Land
@@ -102,15 +109,12 @@
         <img src="">
         <a id="done" class="btn-2" href="https://right-land-paradise.vercel.app" target="_blank">Look now <i class="ri-arrow-right-line"></i></a>
       </div>
-    </div>
-    <div class="onLoadFooter">
       <div class="card">
-        <h4>Right Land Paradise Discord BOT</h4>
-        <p>A simple discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
+        <h4>Right Land Paradise BOT</h4>
+        <p>A discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
       </div>
-    </div>
     </div>
   </section>
 
@@ -133,14 +137,14 @@
     </div>
   </footer>
   <div class="copyright onLoadCopyright">
-    Copyright © 2023. All Right Reserver
+    Copyright © 2023. All Right Reserved
   </div>
   <!--Particles-->
   <div class="onLoadStars">
     <div id="particles-js"></div>
   </div>
   
-  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+  <script src="particles.min.js"></script> 
   <!--Main Script-->
   <script src="script.js"></script>
 </body>
