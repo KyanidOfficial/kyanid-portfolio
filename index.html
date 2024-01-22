@@ -11,8 +11,8 @@
 </head>
 
 <body id="body">
-  <div id="blackhole"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
-  <nav> 
+  <div id="blackhole" class="onLoadHole"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
+  <nav id="navLoad" class="onLoadNav">
     <div class="nav-logo">
       <a href="#">
         <img src="items/logo.png">
@@ -25,10 +25,8 @@
       <a href="#portf" class="link">Projects</a>
       <a href="#conta" class="link">Contacts</a>
     </ul>
-
   </nav>
-
-  <header id="start" class="container">
+  <header id="start" class="container onLoadAboutMe">
     <div class="content">
       <span class="blur"></span>
       <span class="blur"></span>
@@ -42,8 +40,8 @@
   </header>
 
   <section id="knowl" class="container">
-    <h2 class="header">MY KNOWLEDGE</h2>
-    <div class="features">
+    <h2 class="header onLoadText">MY KNOWLEDGE</h2>
+    <div class="features onLoadFooter">
       <span class="know-blur"></span>
       <span class="know-blur"></span>
       <div class="card">
@@ -80,12 +78,12 @@
       </div>
     </div>
   </section>
-  <section id="blur">
+  <section id="blur" class="onLoadFooter">
     <span class="blur"></span>
     <span class="blur"></span>
   </section>
   <section id="portf" class="container">
-    <h2 class="header">MY PROJECTS</h2>
+    <h2 class="header onLoadText">MY PROJECTS</h2>
     <div id="widget" class="widget">
       <button id="closebutton"><i class="fa-solid fa-xmark"></i></button>
       <div class="content">
@@ -96,18 +94,28 @@
       </div>
     </div>
     <div class="projects">
+      <div class="onLoadFooter">
       <div class="card">
         <h4>Right Land Paradise</h4>
         <p>A simple web for minecraft project named <strong style="color: var(--color-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
-        <a id="notdone" class="btn-2" href="#portf">Look now <i class="ri-arrow-right-line"></i></a>
+        <a id="done" class="btn-2" href="https://right-land-paradise.vercel.app" target="_blank">Look now <i class="ri-arrow-right-line"></i></a>
       </div>
+    </div>
+    <div class="onLoadFooter">
+      <div class="card">
+        <h4>Right Land Paradise Discord BOT</h4>
+        <p>A simple discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
+            Paradise</strong>.</p>
+        <img src="">
+      </div>
+    </div>
     </div>
   </section>
 
 
-  <footer id="conta" class="container">
+  <footer id="conta" class="container onLoadFooter">
     <span class="footer-blur"></span>
     <span class="footer-blur"></span>
     <div class="column">
@@ -124,11 +132,14 @@
       </div>
     </div>
   </footer>
-  <div class="copyright">
+  <div class="copyright onLoadCopyright">
     Copyright © 2023. All Right Reserver
   </div>
   <!--Particles-->
-  <div id="particles-js"></div>
+  <div class="onLoadStars">
+    <div id="particles-js"></div>
+  </div>
+  
   <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
   <!--Main Script-->
   <script src="script.js"></script>
