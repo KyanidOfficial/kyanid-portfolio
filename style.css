@@ -10,6 +10,9 @@
     --color-btn: #5321c0;
     --color-fav-close: #5e2cd4;
     --color-fav-close-hov: #7a55ce;
+    --color-yellow: #ffc400;
+    --color-orange: #ff9900;
+    --color-blue: #006eff;
 }
 
 * {
@@ -303,6 +306,38 @@ section .header {
     z-index: -100;
 }
 
+.prices {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.prices .card h4 {
+    margin-bottom: 0.5rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.prices .card p {
+    color: #ccc;
+    margin-bottom: 1rem;
+}
+
+.prices .card {
+    background-color: #27272759;
+    backdrop-filter: blur(5px);
+    padding: 3rem 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all .3s ease;
+}
+
+.prices .card:hover {
+    background-color: var(--color-fav-hov-trans);
+    border-color: var(--color-fav-hov-border);
+}
 /*Widgets*/
 
 .widget {
@@ -349,6 +384,8 @@ section .header {
     justify-content: end;
     transition: all .3s;
 }
+
+
 
 /*.widget #closebutton i:hover {
     color: var(--color-fav-close-hov);
@@ -645,6 +682,10 @@ canvas {
         left: 32%;
     }
 
+    .prices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .features {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -669,6 +710,10 @@ canvas {
 
     #blackhole {
         display: none;
+    }
+
+    .prices {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .projects {
