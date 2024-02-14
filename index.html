@@ -12,7 +12,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/animations-key.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
   <link rel="shortcut icon" href="items/minilogo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/679a729a6b.js" crossorigin="anonymous"></script>
@@ -20,8 +21,8 @@
 </head>
 
 <body id="body">
-  <div id="blackhole" class="onLoadHole"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
-  <nav id="navLoad" class="onLoadNav">
+  <div id="blackhole" class="fadeIn"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
+  <nav id="navLoad" class="fadeInTop">
     <div class="nav-logo">
       <a href="#">
         <img src="items/logo.png">
@@ -35,25 +36,39 @@
       <a href="#conta" class="link">Contacts</a>
     </ul>
   </nav>
-  <header id="start" class="container onLoadAboutMe">
+  <header id="start" class="container fadeInDown">
     <div class="content">
-      <span class="blur"></span>
-      <span class="blur"></span>
-      <h1>Hi, I'm <span>Kyanid</span>,<br> Web Developer</h1>
+      <span class="blur fadeIn"></span>
+      <span class="blur fadeIn"></span>
+      <h1 class="fadeInLeft">Hi, I'm <span>Kyanid</span>,<br> Web Developer</h1>
       <p>
         I'm a <span style="color: var(--color-fav); font-weight: bold;">front-end developer</span> from Czech Republic  <span style="color:var(--color-fav); font-weight: bold;">since 2022</span>. <br>My goal is to create awesome & responsive
         websites. I accept new projects with happines, and I cannot wait to bring your dream website to life!
       </p>
-      <button class="btn"><a href="#knowl">About Me</a></button>
+      <button class="btn fadeInRight">
+        <script 
+        type="text/javascript" 
+        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+        data-name="bmc-button" 
+        data-slug="kyanid" 
+        data-color="#5c29d4" 
+        data-emoji=""  
+        data-font="Cookie" 
+        data-text="Buy me a coffee" 
+        data-outline-color="#000000" 
+        data-font-color="#000000" 
+        data-coffee-color="#1d0455" >
+        </script>
+      </button>
     </div>
   </header>
 
   <section id="knowl" class="container">
-    <h2 class="header onLoadText">MY KNOWLEDGE</h2>
-    <div class="features onloadCard">
-      <span class="know-blur"></span>
-      <span class="know-blur"></span>
-      <div class="card">
+    <h2 class="header fadeIn">MY KNOWLEDGE</h2>
+    <div class="features">
+      <span class="know-blur fadeIn"></span>
+      <span class="know-blur fadeIn"></span>
+      <div class="card fadeInLeft">
         <span><i class="ri-html5-line"></i></span>
         <h4>HTML</h4>
         <p>
@@ -61,7 +76,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card fadeInLeft-wait-1s">
         <span><i class="ri-css3-line"></i></span>
         <h4>CSS</h4>
         <p>
@@ -69,7 +84,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card fadeInLeft-wait-2s">
         <span><i class="ri-javascript-line"></i></span>
         <h4>JavaScript</h4>
         <p>
@@ -78,7 +93,7 @@
         </p>
       </div>
 
-      <div class="card">
+      <div class="card fadeInLeft-wait-3s">
         <span><i class="ri-reactjs-line"></i></span>
         <h4>React (SOON)</h4>
         <p>
@@ -88,11 +103,11 @@
     </div>
   </section>
   <section id="blur">
-    <span class="blur"></span>
-    <span class="blur"></span>
+    <span class="blur fadeIn"></span>
+    <span class="blur fadeIn"></span>
   </section>
   <section id="portf" class="container">
-    <h2 class="header onLoadText">MY PROJECTS</h2>
+    <h2 class="header fadeIn">MY PROJECTS</h2>
     <div id="widget" class="widget">
       <button id="closebutton"><i class="fa-solid fa-xmark"></i></button>
       <div class="content">
@@ -102,15 +117,15 @@
         </p>
       </div>
     </div>
-    <div class="projects onloadCard">
-      <div class="card">
+    <div class="projects">
+      <div class="card fadeInLeft">
         <h4>Right Land Paradise</h4>
         <p>A simple web for minecraft project named <strong style="color: var(--color-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
         <a id="done" class="btn-2" href="https://right-land-paradise.vercel.app" target="_blank">Look now <i class="ri-arrow-right-line"></i></a>
       </div>
-      <div class="card">
+      <div class="card fadeInLeft-wait-1s">
         <h4>Right Land Paradise BOT</h4>
         <p>A discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
             Paradise</strong>.</p>
@@ -119,23 +134,29 @@
     </div>
   </section>
   <section id="prices" class="container">
-    <h2 class="header onLoadText">MY PRICES</h2>
-    <div class="prices onLoadCard">
-      <div class="card">
+    <h2 class="header fadeIn">MY PRICES</h2>
+    <div class="prices">
+      <div class="card fadeInLeft">
         <h4>Basic Website <strong><span style="color: var(--color-fav);">$5</span></strong></h4>
         <p>A simple website made with 
-          <span style="color: var(--color-orange);">HTML</span>, 
-          <span style="color: var(--color-blue);">CSS</span> & 
-          <span style="color: var(--color-yellow);">JS</span>.</p>
+          <span style="color: var(--color-orange);">HTML</span> 
+          <span style="color: var(--color-blue);">CSS</span>
+          <span style="color: var(--color-yellow);">JS</span>
+        </p>
+        <p>
+          • Responsive Design<br>
+          • Dynamic Content<br>
+          • And more!
+        </p>
       </div>
     </div>
   </section>
 
-  <footer id="conta" class="container onLoadFooter">
-    <span class="footer-blur"></span>
-    <span class="footer-blur"></span>
-    <div class="column">
-      <div class="logo logo-round">
+  <footer id="conta" class="container">
+    <span class="footer-blur fadeIn"></span>
+    <span class="footer-blur fadeIn"></span>
+    <div class="column fadeInDown">
+      <div class="logo logo-round fadeInLeft">
         <img src="items/logo.png">
       </div>
       <p>
@@ -148,17 +169,18 @@
       </div>
     </div>
   </footer>
-  <div class="copyright onLoadCopyright">
-    Copyright © 2023. All Right Reserved
+  <div class="copyright fadeInRight">
+    © 2024 | All Right Reserved | Kyanid
   </div>
   <!--Particles-->
-  <div class="onLoadStars">
+  <div class="fadeIn">
     <div id="particles-js"></div>
   </div>
   
-  <script src="particles.min.js"></script> 
+  <script src="./JS/particles.min.js"></script> 
   <!--Main Script-->
-  <script src="script.js"></script>
+  <script src="./JS/script.js"></script>
+  <script src="./JS/particles.js"></script>
 </body>
 
 </html>
