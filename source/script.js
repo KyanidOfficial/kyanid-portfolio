@@ -1,6 +1,7 @@
 
 /*Widget*/
-var CloseButton = document.getElementById("closebutton");
+/*NO NEED AT THIS MOMENT (ARCHIVED)*/
+/*var CloseButton = document.getElementById("closebutton");
 
 CloseButton.addEventListener("click", function() {
     var widget = document.getElementById("widget");
