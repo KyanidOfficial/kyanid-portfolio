@@ -1,7 +1,8 @@
 
 /*Widget*/
 /*NO NEED AT THIS MOMENT (ARCHIVED)*/
-/*var CloseButton = document.getElementById("closebutton");
+/*
+var CloseButton = document.getElementById("closebutton");
 
 CloseButton.addEventListener("click", function() {
     var widget = document.getElementById("widget");
@@ -18,3 +19,4 @@ openButton.addEventListener("click", function() {
     widgetMain.style.display = "grid";
     body.style.overflow = "hidden";
 });
+*/
