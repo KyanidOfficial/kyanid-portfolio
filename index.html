@@ -17,10 +17,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
   <link rel="icon" href="./items/minilogo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/679a729a6b.js" crossorigin="anonymous"></script>
+
   <title>Kyanid's Portfolio</title>
 </head>
  
-<body id="body">
+<body id="body" onload="translate('cz','lng-tag')">  
+  <!--<script src="source/translate.js"></script>
+  <script src="source/index.js"></script>
+  -->
   <div id="blackhole" class="fadeIn"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
   <nav id="navLoad" class="fadeInTop">
     <div class="nav-logo">
@@ -30,20 +34,20 @@
     </div>
 
     <ul class="nav-links">
-      <a href="#start" class="link">Home</a>
-      <a href="#knowl" class="link">Knowledge</a>
-      <a href="#portf" class="link">Projects</a>
-      <a href="#prices" class="link">Prices</a>
-      <a href="#conta" class="link">Contacts</a>
+      <a lng-tag="home" href="#start" class="link">Home</a>
+      <a lng-tag="knowl" href="#knowl" class="link">Knowledge</a>
+      <a lng-tag="portf" href="#portf" class="link">Projects</a>
+      <a lng-tag="prices" href="#prices" class="link">Prices</a>
+      <a lng-tag="conta" href="#conta" class="link">Contacts</a>
     </ul>
   </nav>
   <header id="start" class="container fadeInDown">
     <div class="content">
       <span class="blur fadeIn"></span>
       <span class="blur fadeIn"></span>
-      <h1 class="fadeInLeft">Hi, I'm <span>Kyanid</span>,<br> Web Developer</h1>
-      <p>
-        I'm a <span style="color: var(--color-fav); font-weight: bold;">front-end developer</span> from Czech Republic  <span style="color:var(--color-fav); font-weight: bold;">since 2022</span>. <br>My goal is to create awesome & responsive
+      <h1 lng-tag="AboutMe__name" class="fadeInLeft">Hi, I'm <span>Kyanid</span>,<br> Web Developer</h1>
+      <p lng-tag="AboutMe__description" class="purple-bold">
+        I'm a <span>front-end developer</span> from Czech Republic  <span>since 2022</span>. <br>My goal is to create awesome & responsive
         websites. I accept new projects with happines, and I cannot wait to bring your dream website to life!
       </p>
       <button class="btn fadeInRight">
@@ -65,14 +69,14 @@
   </header>
 
   <section id="knowl" class="container">
-    <h2 class="header fadeIn">MY KNOWLEDGE</h2>
+    <h2 lng-tag="__knowledge" class="header fadeIn">MY KNOWLEDGE</h2>
     <div class="features">
       <span class="know-blur fadeIn"></span>
       <span class="know-blur fadeIn"></span>
       <div class="card fadeInLeft">
         <span><i class="ri-html5-line"></i></span>
         <h4>HTML</h4>
-        <p>
+        <p lng-tag="html__descritpion">
           HTML is the standard markup language for creating Web pages
         </p>
       </div>
@@ -80,7 +84,7 @@
       <div class="card fadeInLeft-wait-1s">
         <span><i class="ri-css3-line"></i></span>
         <h4>CSS</h4>
-        <p>
+        <p lng-tag="css__descritpion">
           CSS is the language we use to style a Web page.
         </p>
       </div>
@@ -88,7 +92,7 @@
       <div class="card fadeInLeft-wait-2s">
         <span><i class="ri-javascript-line"></i></span>
         <h4>JavaScript</h4>
-        <p>
+        <p lng-tag="js__descritpion">
           JavaScript is a scripting language that allowes to create dynamic and interactive web content like
           applications and browsers.
         </p>
@@ -97,54 +101,54 @@
       <div class="card fadeInLeft-wait-3s">
         <span><i class="ri-reactjs-line"></i></span>
         <h4>React (SOON)</h4>
-        <p>
+        <p lng-tag="react__descritpion">
           React makes it painless to create interactive UIs. Design simple views for each state in your application.
         </p>
       </div>
     </div>
   </section>
-  <section id="blur">
+  <section lng-tag="blur">
     <span class="blur fadeIn"></span>
     <span class="blur fadeIn"></span>
   </section>
-  <section id="portf" class="container">
-    <h2 class="header fadeIn">MY PROJECTS</h2>
-    <div id="widget" class="widget">
-      <button id="closebutton"><i class="fa-solid fa-xmark"></i></button>
+  <section lng-tag="portf" class="container">
+    <h2 lng-tag="__projects" class="header fadeIn">MY PROJECTS</h2>
+    <div lng-tag="widget" class="widget">
+      <button lng-tag="closebutton"><i class="fa-solid fa-xmark"></i></button>
       <div class="content">
-        <h2 class="widget-header">Website is not Uploaded!</h2>
-        <p>
+        <h2 lng-tag="webNotFound__title" class="widget-header">Cannot find this Website!</h2>
+        <p lng-tag="webNotFound__descritpion">
           It looks like this website was not uploaded <strong>or</strong> this project was deleted.
         </p>
       </div>
     </div>
     <div class="projects">
       <div class="card fadeInLeft">
-        <h4>Right Land Paradise</h4>
-        <p>A simple web for minecraft project named <strong style="color: var(--color-fav);">Right Land
+        <h4 lng-tag="projectName__rlp">Right Land Paradise</h4>
+        <p lng-tag="projectDescritpion__rlp">A simple web for minecraft project named <strong style="color: var(--color-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
-        <a id="done" class="btn-2" href="https://right-land-paradise.vercel.app" target="_blank">Look now <i class="ri-arrow-right-line"></i></a>
+        <a lng-tag="done project__link" class="btn-2" href="https://right-land-paradise.vercel.app" target="_blank">Look now <i class="ri-arrow-right-line"></i></a>
       </div>
       <div class="card fadeInLeft-wait-1s">
-        <h4>Right Land Paradise BOT</h4>
-        <p>A discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
+        <h4 lng-tag="projectName__rlpBot">Right Land Paradise BOT</h4>
+        <p lng-tag="projectDescritpion__rlpBot">A discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
       </div>
     </div>
   </section>
   <section id="prices" class="container">
-    <h2 class="header fadeIn">MY PRICES</h2>
+    <h2 lng-tag="__prices" class="header fadeIn">MY PRICES</h2>
     <div class="prices">
       <div class="card fadeInLeft">
-        <h4>Basic Website <strong><span style="color: var(--color-fav);">$5</span></strong></h4>
-        <p>A simple website made with 
+        <h4 lng-tag="pricesBasic__title" class="purple-bold">Basic Website <strong><span>$5</span></strong></h4>
+        <p lng-tag="pricesBasic__madeWith">A simple website made with 
           <span style="color: var(--color-orange);">HTML</span> 
           <span style="color: var(--color-blue);">CSS</span>
           <span style="color: var(--color-yellow);">JS</span>
         </p>
-        <p>
+        <p lng-tag="pricesBasic__features">
           • Responsive Design<br>
           • Dynamic Content<br>
           • And more!
@@ -160,7 +164,7 @@
       <div class="logo logo-round fadeInLeft">
         <img src="items/logo.png">
       </div>
-      <p>
+      <p lng-tag="footer__contacts">
         Hello! It's seems that you've reached the point where my contacts should be.<br> If you want to order a website,
         please contact me via discord or <a href="mailto:kyanid.mail@gmail.com" class="email">email</a>
       </p>
@@ -170,7 +174,7 @@
       </div>
     </div>
   </footer>
-  <div class="copyright fadeInRight">
+  <div lng-tag="__copyright" class="copyright fadeInRight">
     © 2024 | All Right Reserved | Kyanid
   </div>
   <!--Particles-->
