@@ -1,4 +1,4 @@
-/*window.addEventListener("load", () => {
+window.addEventListener("load", () => {
     const loader = document.querySelector(".__loading_screen_box");
     const body = document.querySelector("body");
 
@@ -8,4 +8,4 @@
     setTimeout(1000)
     
     loader.remove(".__loading_screen_box");
-})*/
+})

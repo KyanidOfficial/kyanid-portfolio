@@ -3,17 +3,13 @@
     --uib-color: var(--color-fav-close-hov);
     --uib-speed: 1.5s;
     --uib-dot-size: calc(var(--uib-size) * 0.1);
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     height: calc(var(--uib-size) * 0.64);
     width: calc(var(--uib-size) * 0.64);
     z-index: 999;
-  }
-
-  .__window__follow {
-    position: fixed;
   }
 
   .__loading_screen_box {
@@ -27,7 +23,7 @@
     background-color: #030014;
     width: 150rem;
     height: 1000rem;
-    position: absolute;
+    position: fixed;
     transform: rotate(90deg);
     z-index: 555;
   }
