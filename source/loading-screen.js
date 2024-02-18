@@ -1,11 +1,15 @@
 window.addEventListener("load", () => {
     const loader = document.querySelector(".__loading_screen_box");
-    const body = document.querySelector("body");
+    const body = document.querySelector("body");    
 
-    loader.classList.add("__hidden");
-    body.style.overflowY = "scroll";
+    setTimeout(() => {
+        loader.classList.add("__hidden");
+        body.style.overflowY = "scroll";
+        console.log("Website LOADED.");
+    }, 4000);
     
-    setTimeout(1000)
-    
-    loader.remove(".__loading_screen_box");
-})
+    setTimeout(() => {
+        loader.remove(".__loading_screen_box");
+        console.log("Loader REMOVED.")
+    }, 4100);
+});
