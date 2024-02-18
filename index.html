@@ -14,17 +14,49 @@
   <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/animations-key.css">
+  <link rel="stylesheet" href="./style/loadingscreen.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
   <link rel="icon" href="./items/minilogo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/679a729a6b.js" crossorigin="anonymous"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.js" integrity="sha512-d5Sw9+iUgABlmnW7VuwoeGeVAd7jeQEmlSo7qatqfTIr+lhlUz/9xracMlWrWamePo5ogcvYlMq71j9HwP4qqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  
   <title>Kyanid's Portfolio</title>
 </head>
- 
-<body id="body" onload="translate('cz','lng-tag')">  
+
+<body id="body" onload="translate('en','lng-tag')">
+  <div id="loader" class="__loading_screen_box">
+    <div class="__loading_screen_container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="blur blur1"></div>
+      <div class="blur blur1"></div>
+      <div class="blur blur2"></div>
+      <div class="blur blur2"></div>
+    </div>
+      <div class="__loading_screen_background"></div>
+  </div>
+  
+  <l-ring size=”60” color="coral"></l-ring>  
   <!--<script src="source/translate.js"></script>
-  <script src="source/index.js"></script>
-  -->
+  <script src="source/index.js"></script>-->
+
+  <div class="__CONTENT">
   <div id="blackhole" class="fadeIn"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
   <nav id="navLoad" class="fadeInTop">
     <div class="nav-logo">
@@ -68,6 +100,7 @@
     </div>
   </header>
 
+  
   <section id="knowl" class="container">
     <h2 lng-tag="__knowledge" class="header fadeIn">MY KNOWLEDGE</h2>
     <div class="features">
@@ -185,7 +218,9 @@
   <script src="./source/particles.min.js"></script> 
   <!--Main Script-->
   <script src="./source/script.js"></script>
+  <script src="./source/loading-screen.js"></script>
   <script src="./source/particles.js"></script>
+</div>
 </body>
 
 </html>
