@@ -1,0 +1,14 @@
+:root{
+    --clr-fav: #5c29d4;
+    --clr-fav-hov: #6a3ada;
+    --clr-fav-hov-trans: #1d0455;
+    --clr-fav-hov-border: #7545e6;
+    --clr-fav-hov-trans-btn: #4b0fcc;
+    --clr-btn-hov: #622adb;
+    --clr-btn: #5321c0;
+    --clr-fav-close: #5e2cd4;
+    --clr-fav-close-hov: #7a55ce;
+    --clr-yellow: #ffc400;
+    --clr-orange: #ff9900;
+    --clr-blue: #006eff;
+}

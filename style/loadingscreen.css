@@ -1,6 +1,6 @@
 .__loading_screen_container {
     --uib-size: 200px;
-    --uib-color: var(--color-fav-close-hov);
+    --uib-color: var(--clr-fav-close-hov);
     --uib-speed: 1.5s;
     --uib-dot-size: calc(var(--uib-size) * 0.1);
     position: fixed;

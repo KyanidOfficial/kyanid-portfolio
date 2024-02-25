@@ -14,25 +14,18 @@
   <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/animations-key.css">
+  <link rel="stylesheet" href="./style/root.css">
   <link rel="stylesheet" href="./style/loadingscreen.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
   <link rel="icon" href="./items/minilogo.png" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/679a729a6b.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/please-wait/0.0.5/please-wait.js" integrity="sha512-d5Sw9+iUgABlmnW7VuwoeGeVAd7jeQEmlSo7qatqfTIr+lhlUz/9xracMlWrWamePo5ogcvYlMq71j9HwP4qqw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  
+  <script src="https://kit.fontawesome.com/679a729a6b.js" crossorigin="anonymous"></script>  
   <title>Kyanid's Portfolio</title>
 </head>
 
 <body id="body" onload="translate('en','lng-tag')">
-  
-  
-  <l-ring size=”60” color="coral"></l-ring>  
   <!--<script src="source/translate.js"></script>
   <script src="source/index.js"></script>-->
 
-  <div class="__CONTENT">
   <div id="blackhole" class="fadeIn"><video width="100%" src="items/blackhole.webm" muted autoplay loop></video></div>
   <nav id="navLoad" class="fadeInTop">
     <div class="nav-logo">
@@ -49,6 +42,7 @@
       <a lng-tag="conta" href="#conta" class="link">Contacts</a>
     </ul>
   </nav>
+  <l-ring size=”60” color="coral"></l-ring>
   <div id="loader" class="__loading_screen_box">
     <div class="__loading_screen_container">
       <div class="dot"></div>
@@ -80,10 +74,10 @@
       <span class="blur fadeIn"></span>
       <h1 lng-tag="AboutMe__name" class="fadeInLeft">Hi, I'm <span>Kyanid</span>,<br> Web Developer</h1>
       <p lng-tag="AboutMe__description" class="purple-bold">
-        I'm a <span style="color: var(--color-fav);">front-end developer</span> from Czech Republic  <span style="color: var(--color-fav)";>since 2022</span>. <br>My goal is to create awesome & responsive
+        I'm a <span>front-end developer</span> from Czech Republic  <span>since 2022</span>. <br>My goal is to create awesome & responsive
         websites. I accept new projects with happines, and I cannot wait to bring your dream website to life!
       </p>
-      <button class="btn fadeInRight" style="color: black;">
+      <button class="btn fadeInRight">
         <script 
         type="text/javascript" 
         src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
@@ -145,7 +139,7 @@
     <span class="blur fadeIn"></span>
     <span class="blur fadeIn"></span>
   </section>
-  <section lng-tag="portf" class="container">
+  <section id="portf" lng-tag="portf" class="container">
     <h2 lng-tag="__projects" class="header fadeIn">MY PROJECTS</h2>
     <div lng-tag="widget" class="widget">
       <button lng-tag="closebutton"><i class="fa-solid fa-xmark"></i></button>
@@ -159,14 +153,14 @@
     <div class="projects">
       <div class="card fadeInLeft">
         <h4 lng-tag="projectName__rlp">Right Land Paradise</h4>
-        <p lng-tag="projectDescritpion__rlp">A simple web for minecraft project named <strong style="color: var(--color-fav);">Right Land
+        <p lng-tag="projectDescritpion__rlp">A simple web for minecraft project named <strong style="color: var(--clr-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
         <a lng-tag="done project__link" class="btn-2" href="https://right-land-paradise.vercel.app" target="_blank">Look now <i class="ri-arrow-right-line"></i></a>
       </div>
       <div class="card fadeInLeft-wait-1s">
         <h4 lng-tag="projectName__rlpBot">Right Land Paradise BOT</h4>
-        <p lng-tag="projectDescritpion__rlpBot">A discord BOT for minecraft project named <strong style="color: var(--color-fav);">Right Land
+        <p lng-tag="projectDescritpion__rlpBot">A discord BOT for minecraft project named <strong style="color: var(--clr-fav);">Right Land
             Paradise</strong>.</p>
         <img src="">
       </div>
@@ -178,9 +172,9 @@
       <div class="card fadeInLeft">
         <h4 lng-tag="pricesBasic__title" class="purple-bold">Basic Website <strong><span>$5</span></strong></h4>
         <p lng-tag="pricesBasic__madeWith">A simple website made with 
-          <span style="color: var(--color-orange);">HTML</span> 
-          <span style="color: var(--color-blue);">CSS</span>
-          <span style="color: var(--color-yellow);">JS</span>
+          <span style="color: var(--clr-orange);">HTML</span> 
+          <span style="color: var(--clr-blue);">CSS</span>
+          <span style="color: var(--clr-yellow);">JS</span>
         </p>
         <p lng-tag="pricesBasic__features">
           • Responsive Design<br>
@@ -221,7 +215,6 @@
   <script src="./source/script.js"></script>
   <script src="./source/loading-screen.js"></script>
   <script src="./source/particles.js"></script>
-</div>
 </body>
 
 </html>

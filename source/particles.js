@@ -45,12 +45,12 @@ particlesJS("particles-js",
 }},
 "size":
 {
-    "value":1,
+    "value":2,
     "random":true,
     "anim":
     {
         "enable":false,
-        "speed":2,
+        "speed":1.5,
         "size_min":0.1,
         "sync":false
 }},

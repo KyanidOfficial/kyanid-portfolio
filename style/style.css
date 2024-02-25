@@ -1,19 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
-    --color-fav: #5c29d4;
-    --color-fav-hov: #6a3ada;
-    --color-fav-hov-trans: #1d0455;
-    --color-fav-hov-border: #7545e6;
-    --color-fav-hov-trans-btn: #4b0fcc;
-    --color-btn-hov: #622adb;
-    --color-btn: #5321c0;
-    --color-fav-close: #5e2cd4;
-    --color-fav-close-hov: #7a55ce;
-    --color-yellow: #ffc400;
-    --color-orange: #ff9900;
-    --color-blue: #006eff;
-}
 
 * {
     padding: 0;
@@ -23,9 +9,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+body {
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #030014;
+}
 .purple-bold span {
-    color: var(--color-fav); 
+    color: var(--clr-fav); 
     font-weight: bold;
 }
 
@@ -47,11 +37,7 @@ button {
     cursor: pointer;
 }
 
-body {
-    overflow: hidden;
-    font-family: 'Poppins', sans-serif;
-    background-color: #030014;
-}
+
 
 #blackhole {
     position: absolute;
@@ -98,7 +84,7 @@ nav {
     width: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--color-fav);
+    background-color: var(--clr-fav);
     transition: all .2s;
 }
 
@@ -124,14 +110,14 @@ nav {
     padding: 0.2rem 0.5rem;
     font-size: 1rem;
     color: #fff;
-    background-color: var(--color-fav);
+    background-color: var(--clr-fav);
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s;
 }
 
 .btn-2:hover {
-    background-color: var(--color-btn-hov);
+    background-color: var(--clr-btn-hov);
 }
 
 .container {
@@ -142,7 +128,7 @@ nav {
 
 .blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px var(--color-fav);
+    box-shadow: 0 0 1000px 50px var(--clr-fav);
     z-index: -100;
 }
 
@@ -198,7 +184,7 @@ section .header {
 
 .know-blur {
     position: absolute;
-    box-shadow: 0 0 1000px 50px var(--color-fav);
+    box-shadow: 0 0 1000px 50px var(--clr-fav);
     left: 95%;
     z-index: -150; 
 }
@@ -213,13 +199,13 @@ section .header {
 }
 
 .features .card:hover {
-    background-color: var(--color-fav-hov-trans);
-    border-color: var(--color-fav-hov-border);
+    background-color: var(--clr-fav-hov-trans);
+    border-color: var(--clr-fav-hov-border);
 }
 
 .features .card span{ 
     display: inline-block;
-    background-color: var(--color-fav);
+    background-color: var(--clr-fav);
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -244,7 +230,7 @@ section .header {
     transition: all .3s;
 }
 .features .card a:hover {
-    color: var(--color-fav);
+    color: var(--clr-fav);
 }
 
 .projects {
@@ -277,19 +263,19 @@ section .header {
 }
 
 .projects .card:hover {
-    background-color: var(--color-fav-hov-trans);
-    border-color: var(--color-fav-hov-border);
+    background-color: var(--clr-fav-hov-trans);
+    border-color: var(--clr-fav-hov-border);
 }
 
 .card:hover .btn-2 {
-    background-color: var(--color-fav-hov-trans-btn);
+    background-color: var(--clr-fav-hov-trans-btn);
 }
 .card:hover .btn-2:hover {
-    background-color: var(--color-btn-hov);
+    background-color: var(--clr-btn-hov);
 }
 .projects .card span{ 
     display: inline-block;
-    background-color: var(--color-fav);
+    background-color: var(--clr-fav);
     padding: 2px 9px;
     margin-bottom: 1rem;
     font-size: 1.75rem;
@@ -335,8 +321,8 @@ section .header {
 }
 
 .prices .card:hover {
-    background-color: var(--color-fav-hov-trans);
-    border-color: var(--color-fav-hov-border);
+    background-color: var(--clr-fav-hov-trans);
+    border-color: var(--clr-fav-hov-border);
 }
 /*Widgets*/
 
@@ -357,8 +343,8 @@ section .header {
 }
 
 .widget:hover {
-    background-color: var(--color-fav-hov-trans);
-    border: 1px solid var(--color-fav-hov-border); 
+    background-color: var(--clr-fav-hov-trans);
+    border: 1px solid var(--clr-fav-hov-border); 
 }
 
 .widget h2 {
@@ -388,7 +374,7 @@ section .header {
 
 
 /*.widget #closebutton i:hover {
-    color: var(--color-fav-close-hov);
+    color: var(--clr-fav-close-hov);
 }*/
 
 .widget #closebutton .fa-xmark {
@@ -397,11 +383,11 @@ section .header {
 }
 
 .widget:hover #closebutton i{
-    color: var(--color-btn);
+    color: var(--clr-btn);
 }
 
 .widget:hover #closebutton i:hover{
-    color: var(--color-btn-hov);
+    color: var(--clr-btn-hov);
 }
 
 
@@ -419,7 +405,7 @@ footer {
 
 .footer-blur {
     position: absolute;
-    box-shadow: 0 0 1000px 80px var(--color-fav);
+    box-shadow: 0 0 1000px 80px var(--clr-fav);
     left: -20%;
     top: 50%;
     z-index: -150; 
@@ -436,7 +422,7 @@ footer .column p {
 }
 
 footer .email {
-    color: var(--color-fav);
+    color: var(--clr-fav);
     font-weight: 800;
     cursor: pointer;
     transition: all .3s ease;
@@ -463,8 +449,8 @@ footer .column .socials a {
 
 footer .column .socials a:hover {
     color: #fff;
-    background-color: var(--color-fav);
-    border-color: var(--color-fav); 
+    background-color: var(--clr-fav);
+    border-color: var(--clr-fav); 
 }
 
 .copyright {
@@ -476,7 +462,7 @@ footer .column .socials a:hover {
     text-align: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    box-shadow: 0 0 50px 0 var(--color-fav);
+    box-shadow: 0 0 50px 0 var(--clr-fav);
     margin-left: auto;
     margin-right: auto;
     margin-bottom: -1000vh;
@@ -502,7 +488,7 @@ canvas {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--color-fav);
+    background: var(--clr-fav);
     border-radius: 5px;
 }
 ::-webkit-scrollbar {
